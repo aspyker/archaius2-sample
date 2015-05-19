@@ -14,11 +14,11 @@ import javax.inject.Inject;
 import javax.inject.Singleton;
 
 @Singleton
-@Configuration
+@Configuration(allowFields = true)
 public class SomeService2 {
     private static Logger logger = LoggerFactory.getLogger(SomeService2.class);
     private int intprop;
-    private Property<String> stringprop;
+    //private Property<String> stringprop;
     private boolean boolprop;
 
     @Inject
@@ -30,7 +30,8 @@ public class SomeService2 {
     }
 
     public void getAgainstProperty() {
-        logger.debug("stringprop = " + stringprop.get());
+//        logger.debug("stringprop = " + stringprop.get());
+        logger.debug("setting properties via @Configuration not yet supported");
     }
 
     public void setBoolprop(Boolean boolprop) {
