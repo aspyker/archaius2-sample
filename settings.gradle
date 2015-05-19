@@ -1,0 +1,2 @@
+rootProject.name='archaius2-sample'
+include 'simple-sample'
