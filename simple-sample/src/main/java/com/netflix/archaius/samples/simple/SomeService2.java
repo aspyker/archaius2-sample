@@ -31,7 +31,7 @@ public class SomeService2 {
 
     public void getAgainstProperty() {
 //        logger.debug("stringprop = " + stringprop.get());
-        logger.debug("setting properties via @Configuration not yet supported");
+        logger.debug("setting properties for non-primitive types via @Configuration not yet supported");
     }
 
     public void setBoolprop(Boolean boolprop) {
