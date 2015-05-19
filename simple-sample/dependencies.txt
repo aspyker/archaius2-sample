@@ -1,0 +1,18 @@
+runtime - Runtime classpath for source set 'main'.
++--- com.netflix.archaius:archaius2-core:2.0.0-rc.12
+|    +--- org.apache.commons:commons-lang3:3.3.2
+|    +--- org.slf4j:slf4j-api:1.6.3 -> 1.7.12
+|    \--- javax.inject:javax.inject:1
++--- com.netflix.archaius:archaius2-guice:2.0.0-rc.12
+|    +--- com.netflix.archaius:archaius2-core:2.0.0-rc.12 (*)
+|    +--- javax.inject:javax.inject:1
+|    +--- com.google.inject:guice:3.0
+|    |    +--- javax.inject:javax.inject:1
+|    |    +--- aopalliance:aopalliance:1.0
+|    |    \--- org.sonatype.sisu.inject:cglib:2.2.1-v20090111
+|    |         \--- asm:asm:3.1
+|    \--- com.google.inject.extensions:guice-multibindings:3.0
+|         \--- com.google.inject:guice:3.0 (*)
+\--- org.slf4j:slf4j-log4j12:1.7.12
+     +--- org.slf4j:slf4j-api:1.7.12
+     \--- log4j:log4j:1.2.17
